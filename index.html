@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Химический Пазл</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Химический Пазл</h1>
+    <p>Перетащите элементы в правильные категории.</p>
+
+    <div class="puzzle-container">
+        <div class="categories">
+            <div class="category" id="alkanes">Алканы</div>
+            <div class="category" id="alcohols">Спирты</div>
+            <div class="category" id="acids">Карбоновые кислоты</div>
+        </div>
+        <div class="elements">
+            <div class="element" draggable="true" data-category="alkanes">CnH2n+2</div>
+            <div class="element" draggable="true" data-category="alcohols">-OH</div>
+            <div class="element" draggable="true" data-category="acids">CH3COOH</div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
